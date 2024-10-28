@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Savery: The Ethical, Moral, and Historical Justifications</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --text-color: #333;
+            --link-color: #3498db;
+            --hover-color: #2980b9;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: var(--primary-color);
+            padding: 2rem;
+            color: white;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .content {
+            flex: 1;
+            padding: 2rem;
+            margin-left: 300px;
+            max-width: 800px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            border-bottom: 2px solid white;
+            padding-bottom: 0.5rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+
+        .nav-links a:hover {
+            background: var(--secondary-color);
+            color: #fff;
+        }
+
+        .section {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .section.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .section h1 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: var(--secondary-color);
+            margin-top: 2rem;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--primary-color);
+            margin: 1.5rem 0;
+            padding-left: 1rem;
+            font-style: italic;
+        }
+
+        .works-cited {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--primary-color);
+        }
+
+        .works-cited h2 {
+            margin-bottom: 1rem;
+        }
+
+        .works-cited p {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            text-indent: -2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Navigation</h2>
+            <ul class="nav-links">
+                <li><a href="#introduction" onclick="showSection('introduction')">Introduction</a></li>
+                <li><a href="#douglass" onclick="showSection('douglass')">Frederick Douglass's Narrative</a></li>
+                <li><a href="#jacobs" onclick="showSection('jacobs')">Harriet Jacobs's Incidents</a></li>
+                <li><a href="#walker" onclick="showSection('walker')">Walker's Appeal & Douglass's Speech</a></li>
+                <li><a href="#religious" onclick="showSection('religious')">Religious Justification</a></li>
+                <li><a href="#historical" onclick="showSection('historical')">Historical Justification</a></li>
+                <li><a href="#conclusion" onclick="showSection('conclusion')">Conclusion</a></li>
+                <li><a href="#works-cited" onclick="showSection('works-cited')">Works Cited</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="introduction" class="section active">
+                <h1>Why Savery: The Ethical, Moral, and Historical Justifications</h1>
+                <p>The literary works of Frederick Douglass, Harriet Jacobs, and David Walker, really highlight issues in the system of slavery that existed in the United States, until it was outlawed in 1865, that make one question how others ever believed slavery was morally and ethically right...</p>
+            </section>
+
+            <section id="douglass" class="section">
+                <h2>Frederick Douglass's A Narrative of the Life of Frederick Douglass</h2>
+                <p>Frederick Douglass's slave narrative, A Narrative of the Life of Frederick Douglass, shows the grotesque and brutal mindset of slave owners as well as the use of religion to support a profitable lifestyle...</p>
+            </section>
+
+            <section id="jacobs" class="section">
+                <h2>Harriet Jacobs's Incidents in the Life of a Slave Girl</h2>
+                <p>In her narrative, Incidents in the Life of a Slave Girl, Harriet Jacobs expresses some of the same sentiments towards religion and how it contributes to the institution of slavery...</p>
+            </section>
+
+            <section id="walker" class="section">
+                <h2>Walker's Appeal & Douglass's Fourth of July Speech</h2>
+                <p>Walker, in his appeal, approaches the same ideas from a different direction. In trying to prove to white people the atrocities they have committed, he related his reasoning back to stories in the Bible and historical evidence...</p>
+            </section>
+
+            <section id="religious" class="section">
+                <h2>Justification Through Religion</h2>
+                <p>While many arguments were made by those in slave-owning states to justify the practice of owning another human being like chattel, one of the most influential to the people of the antebellum South is the religious justifications...</p>
+            </section>
+
+            <section id="historical" class="section">
+                <h2>Justification Through Historical Basis and Precedent</h2>
+                <p>The other main support to the proslavery argument is the use of historical figures and precedents. Many times, this includes refences to the Greek Helots, the Roman slaves, and biblical references to the Israelites...</p>
+            </section>
+
+            <section id="conclusion" class="section">
+                <h2>Conclusion</h2>
+                <p>Centuries have passed and yet our country has not repaired the damage left by slavery practices. Most people will probably blow it off and say, "I have nothing to do with that. It's not my problem..."</p>
+            </section>
+
+            <section id="works-cited" class="section">
+                <h2>Works Cited</h2>
+                <div class="works-cited">
+                    <p>Douglass, Frederick. "A Narrative of the Life of Frederick Douglass". The Classic Slave Narratives, Henry L. Gates, Signet Classics, 2012.</p>
+                    <p>Douglass, Frederick. "Africans in America/Part 4/Frederick Douglass Speech." PBS, Public Broadcasting Service.</p>
+                    <p>Clinton, Catherine. "Fanny Kemble's Journal: A Woman Confronts Slavery on a Georgia Plantation." Frontiers: A Journal of Women Studies, vol. 9, no. 3, 1987.</p>
+                    <!-- Add more citations -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            
+            // If on mobile, scroll to content
+            if (window.innerWidth < 768) {
+                document.getElementById(sectionId).scrollIntoView();
+            }
+        }
+    </script>
+</body>
+</html>
